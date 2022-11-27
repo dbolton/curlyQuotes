@@ -4,7 +4,7 @@ import MuseScore 3.0
 MuseScore {
   menuPath: "Plugins." + qsTr("Curly Quotes")
   description: "Change apostrophes and double quotes from straight to curly. This plugin can only affect lyric text."
-  version: "1.0"
+  version: "1.1"
   onRun: {
     if (!curScore)
       Qt.quit();

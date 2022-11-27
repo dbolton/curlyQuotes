@@ -4,7 +4,7 @@
 ## Usage
 1. Copy curlyQuotes.qml into your plugins directory. See [MuseScore documentation](https://musescore.org/en/handbook/3/plugins#installation) for details.
 2. Enable the plugin in MuseScore (**Plugins** > **Plugin Manager**).
-3. Choose **Plugins** > **Curly Quotes** to convert existing lyrics. 
+3. Choose **Plugins** > **Curly Quotes** to convert existing lyrics and other text surround the staff. 
 
 ## Features
 
