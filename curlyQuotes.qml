@@ -3,8 +3,8 @@ import MuseScore 3.0
 
 MuseScore {
   menuPath: "Plugins." + qsTr("Curly Quotes")
-  description: "Change apostrophes and double quotes from straight to curly. This plugin can only affect lyric text."
-  version: "1.2"
+  description: "Change apostrophes and double quotes from straight to curly. This plugin affects lyrics text, system text, staff text, expression text, rehearsal marks, instrument changes, and tempo markings."
+  version: "1.3"
 
   id: curlyquotes
  
@@ -29,6 +29,7 @@ MuseScore {
     //console.log(curScore.selection.elements.text)
     
     //console.log(Lyrics.Syllabic,Element.BEGIN, Syllabic)
+    curScore.startCmd();
     while (cursor.segment) {
       
       //
@@ -92,6 +93,7 @@ MuseScore {
       
       cursor.next();
     }
+    curScore.endCmd();
     //console.log(curScore.title,curScore.scoreName,curScore.composer) // This pulls the metadata under File > Score Properties rather than the text on the page. 
     //console.log(curScore.parts[0].staff)
     (typeof(quit) === 'undefined' ? Qt.quit : quit)()
