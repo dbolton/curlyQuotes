@@ -2,9 +2,10 @@
 **Curly Quotes** is a MuseScore 3.x/4.x plugin to change apostrophes and quotation marks from straight to curly (also known as “**smart quotes**”). The plugin changes quotation marks in lyrics and other text surrounding the staff (like staff text, system text, expression text, etc.)
 
 ## Usage
+1. Copy curlyQuotes.qml into your plugins directory. See [MuseScore 3 documentation](https://musescore.org/en/handbook/3/plugins#install-new)resp. [MuseScore 4 documentation](https://musescore.org/en/handbook/4/plugins#manage) for details.
 2. Enable the plugin in MuseScore (**Plugins** > **Plugin Manager**).
-3. Choose **Plugins** > **Curly Quotes** to convert existing lyrics and other text surround the staff. 
-1. Copy curlyQuotes.qml and/or curlyQuotes-German.qml into your plugins directory. See [MuseScore 3 documentation](https://musescore.org/en/handbook/3/plugins#install-new)resp. [MuseScore 4 documentation](https://musescore.org/en/handbook/4/plugins#manage) for details.
+3. Optionally select the range the plugin should work on, else it'll work on the entire score. 
+4. Choose **Plugins** > **Curly Quotes** to convert existing lyrics and other text surround the staff. 
 
 ## Features
 
