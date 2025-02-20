@@ -1,13 +1,23 @@
-import QtQuick 2.0
+import QtQuick 2.9
 import MuseScore 3.0
 
 MuseScore {
   menuPath: "Plugins." + qsTr("Curly Quotes")
   description: "Change apostrophes and double quotes from straight to curly. This plugin can only affect lyric text."
-  version: "1.1"
+  version: "1.2"
+
+  id: curlyquotes
+ 
+  //4.4 title: "Curly Quotes"
+  Component.onCompleted : {
+    if (mscoreMajorVersion >= 4 && mscoreMinorVersion <= 3) {
+       curlyquotes.title = "Curly Quotes";
+    }
+  }
+
   onRun: {
     if (!curScore)
-      Qt.quit();
+      (typeof(quit) === 'undefined' ? Qt.quit : quit)()
 
     var wordsStartingWithApostrophe = ["'bout","'cause","'cept","'em","'fro","'n","'neath","'nother","'pon","'re","'round","'s","'sall","'scuse","'sfar","'sup","'thout","'til","'tis","'twas","'tween","'twere","'ve"]
     
@@ -84,6 +94,6 @@ MuseScore {
     }
     //console.log(curScore.title,curScore.scoreName,curScore.composer) // This pulls the metadata under File > Score Properties rather than the text on the page. 
     //console.log(curScore.parts[0].staff)
-    Qt.quit();
+    (typeof(quit) === 'undefined' ? Qt.quit : quit)()
   }
 }
