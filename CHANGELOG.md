@@ -1,6 +1,7 @@
 # Changelog
 ## Version 1.3 (2025-02-20)
 * Add changes made to the undo stack, esp. needed for Mu4
+* Work on all staves and voices
 ## Version 1.2 (2025-02-17)
 * Porting to MuseScore 4, maintaining full compatibility with MuseScore 3
 ## Version 1.1 (2022-11-26)
