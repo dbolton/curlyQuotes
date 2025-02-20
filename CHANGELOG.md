@@ -2,6 +2,7 @@
 ## Version 1.3 (2025-02-20)
 * Add changes made to the undo stack, esp. needed for Mu4
 * Work on all staves and voices
+* Add a version for German curly quotes
 ## Version 1.2 (2025-02-17)
 * Porting to Mu4, maintaining full compatibility with Mu3
 ## Version 1.1 (2022-11-26)
