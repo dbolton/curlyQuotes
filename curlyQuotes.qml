@@ -4,7 +4,7 @@ import MuseScore 3.0
 MuseScore {
   property variant language : "" //qsTr(" - German")
   menuPath: "Plugins." + qsTr("Curly Quotes") + language 
-  description: "Change apostrophes and double quotes from straight to curly. This plugin affects lyrics text, system text, staff text, expression text, rehearsal marks, instrument changes, and tempo markings."
+  description: "Change apostrophes and double quotes from straight to curly. This plugin affects lyrics and music-attached text (system text, staff text, expression text, rehearsal marks, instrument changes, and tempo markings)."
   version: "1.3"
 
   id: curlyquotes
