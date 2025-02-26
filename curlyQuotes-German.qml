@@ -9,7 +9,7 @@ MuseScore {
 
   id: curlyquotes
 
-  //4.4 title: "Curly Quotes - German" // + language doesn't work here
+  //4.4 title: "Curly Quotes - German"
   Component.onCompleted : {
     if (mscoreMajorVersion >= 4 && mscoreMinorVersion <= 3) {
        curlyquotes.title = "Curly Quotes" + language;
